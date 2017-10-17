@@ -1,0 +1,2545 @@
+body {
+    font-family: 'europe', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.flag-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../images/flag-right.png) no-repeat;
+    width: 632px;
+    height: 684px;
+    z-index: 6000;
+    background-size: cover;
+}
+
+#container {
+    padding-top: 88px;
+    position: relative;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.fsi {
+    font-style: italic;
+}
+
+.top-menu {
+    position: fixed;
+    background: #fff;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5000;
+}
+
+.top-menu li {
+    float: left;
+    padding-top: 34px;
+}
+
+.top-menu ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #000;
+    display: block;
+    position: relative;
+    height: 23px;
+    padding-top: 3px;
+}
+
+.top-menu ul a:hover, .top-menu ul .active a {
+    color: #ffffff;
+    background: #fc1833;
+}
+
+.top-menu ul a:before, .top-menu ul a:after {
+    position: relative;
+    display: inline-block;
+    width: 23px;
+    height: 26px;
+    content: ' ';
+    vertical-align: middle;
+    top: -3px;
+}
+
+.top-menu ul a:hover::before, .top-menu ul .active a:before {
+    background: #fff url("../images/link-before.jpg") no-repeat left;
+}
+
+.top-menu ul a:hover::after, .top-menu ul .active a:after {
+    background: #fff url("../images/link-after.jpg") no-repeat left;
+}
+
+.top-menu .last a:after {
+    background-position: right 0;
+    right: -1px;
+
+}
+
+.top-menu .container {
+    padding: 30px 0 20px;
+}
+
+.top-menu ul {
+    float: right;
+}
+
+.header {
+    background: url("../images/header-bg.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 778px;
+    position: relative;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 52px;
+    text-align: right;
+    line-height: 73px;
+    position: relative;
+    margin: 0 auto 50px;
+}
+
+.header h1 {
+    padding-top: 60px;
+}
+
+.hint {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 300;
+    color: #ffffff;
+    padding-top: 20px;
+    line-height: 18px;
+
+}
+
+.mail-form input {
+    display: inline-block;
+    background: #fff;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+    border-radius: 8px;
+    height: 50px;
+    border: 0;
+    width: 180px;
+    font-size: 23px;
+    vertical-align: middle;
+    font-family: 'europe', sans-serif;
+    margin-right: 20px;
+}
+
+.mail-form input.error{
+    background: #ffc9c9;
+}
+
+.mail-form {
+    text-align: center;
+}
+
+.mail-form .button {
+    display: inline-block;
+    font-style: normal;
+    font-family: 'europe', sans-serif;
+    font-size: 20px;
+    width: 326px;
+    padding: 11px 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.scrollarr {
+    display: block;
+    margin: 0 auto;
+    background: url("../images/scrollarr.png") no-repeat;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    bottom: 150px;
+    margin-left: -23px;
+}
+
+.scrollarr:hover {
+    opacity: 0.7;
+}
+
+.gray {
+    background: #f5f5f5;
+}
+
+.wrap {
+    position: relative;
+    padding: 60px 0 80px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 46px;
+    line-height: 51px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.tickets .container {
+    text-align: center;
+}
+
+.tickets p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 55px;
+}
+
+.tickets h3 {
+    height: 100px;
+    padding-left: 20px;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
+
+.tickets .block {
+    display: inline-block;
+    position: relative;
+    width: 254px;
+    height: 233px;
+    padding-top: 35px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tickets .block + .block {
+    margin-left: -42px;
+}
+
+.tickets .block.one {
+    background: url("../images/block1.png") no-repeat;
+}
+
+.tickets .block.two {
+    background: url("../images/block2.png") no-repeat;
+}
+
+.tickets .block.three {
+    background: url("../images/block3.png") no-repeat;
+}
+
+.tickets .block.four {
+    background: url("../images/block4.png") no-repeat;
+}
+
+.tickets .block span {
+    font-size: 22px;
+    line-height: 28px;
+    padding-right: 25px;
+}
+
+.autodrom h2 + p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.shadow {
+    position: absolute;
+    background: url("../images/shadow.png") no-repeat center top;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 38px;
+}
+
+.shedule {
+    background: url("../images/shedule-bg.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: 602px;
+    color: #ffffff;
+}
+
+.shedule a {
+    display: block;
+    position: relative;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 3px solid #fff;
+    border-top: 3px solid #fff;
+    height: 47px;
+    padding-left: 20px;
+    padding-right: 19px;
+}
+
+.shedule a span {
+    position: relative;
+    display: block;
+    float: left;
+    height: 47px;
+
+}
+
+.shedule a .name {
+    padding-top: 17px;
+    height: 30px;
+    text-align: center;
+    width: 645px;
+    float: right;
+    letter-spacing: -0.3px;
+    font-size: 13px;
+}
+
+.shedule a .date {
+    font-size: 16px;
+    background: #fff;
+    color: #e20000;
+    padding-top: 16px;
+    height: 31px;
+    padding-right: 19px;
+}
+
+.shedule a .date:after {
+    display: block;
+    background: url("../images/shedule-link-after.jpg") no-repeat;
+    width: 19px;
+    height: 53px;
+    right: 0;
+    top: -3px;
+    content: '';
+    position: absolute;
+}
+
+.shedule a:before {
+    background: url("../images/shedule-link-before.jpg") no-repeat;
+    position: absolute;
+    left: 0;
+    content: '';
+    top: -3px;
+    display: block;
+    width: 20px;
+    height: 53px;
+}
+
+.shedule a:hover span {
+    color: #e20000;
+
+}
+
+.shedule a:after {
+    background: url("../images/shedule-li-after.jpg") no-repeat;
+    position: absolute;
+    right: -1px;
+    content: '';
+    top: -3px;
+    display: block;
+    width: 20px;
+    height: 53px;
+}
+
+.shedule a:hover:after {
+    background: url("../images/link-after-hover.jpg") no-repeat;
+}
+
+.shedule li {
+    margin-bottom: 50px;
+}
+
+.shedule ul {
+    padding-top: 20px;
+}
+
+.shedule p {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.shedule a:hover {
+    background: #fff;
+}
+
+.shedule a:hover .date:after {
+    background: #fff;
+}
+
+.comands {
+    position: relative;
+    overflow: hidden;
+    z-index: 200;
+
+}
+
+.comands .container {
+    padding-top: 90px;
+    position: relative;
+    z-index: 100;
+
+}
+
+.comands .inner {
+    min-height: 280px;
+    position: relative;
+    margin-top: 70px;
+}
+
+.arr {
+    position: absolute;
+    cursor: pointer;
+    background: url("../images/slider-arr.png") no-repeat;
+    width: 67px;
+    height: 67px;
+    top: 422px;
+    z-index: 100;
+}
+
+.arr.prev {
+    background-position: 0 bottom;
+    left: 100px;
+}
+
+.arr.prev:hover, .tribunes .container:hover .prev {
+    background-position: 0 bottom;
+}
+
+.arr.next {
+    background-position: right bottom;
+    right: 100px;
+}
+
+.arr.next:hover, .tribunes .container:hover .next {
+    background-position: right bottom;
+}
+
+.comands li {
+    text-align: center;
+    display: table-cell;
+    width: 930px;
+    height: 335px;
+    vertical-align: middle;
+
+}
+
+.comands li .img {
+    height: 330px;
+    width: 930px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.comands li h2 {
+    font-weight: 700;
+}
+
+.respondes {
+    background: url("../images/resp-bg.jpg") no-repeat center top;
+    background-size: cover;
+    min-height: inherit;
+    padding-bottom: 70px;
+}
+
+.respondes li {
+    width: 100%;
+    float: left;
+    /*min-height: 345px;*/
+}
+
+.respondes li .top {
+    font-size: 22px;
+    border-bottom: 2px solid #b5b5b5;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.respondes li strong {
+    display: block;
+    text-transform: uppercase;
+}
+
+.respondes img {
+    display: block;
+    padding: 6px;
+    border: 2px solid #b5b5b5;
+    border-radius: 50%;
+}
+
+.respondes li p {
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #474747;
+}
+
+.respondes .inf {
+    margin-left: 244px;
+    padding-top: 20px;
+    background: url("../images/quote.png") no-repeat right 88px;
+    padding-right: 75px;
+
+}
+
+.respondes .inf span {
+    color: #474747;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    border: 2px solid #ff0000;
+    border-radius: 9px;
+}
+
+.pagination a + a {
+    margin-left: 5px;
+}
+
+.pagination span {
+    display: block;
+    text-indent: -300px;
+    overflow: hidden;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.pagination a.selected span {
+    background: #ff0000;
+}
+
+.pagination a.selected {
+    border-color: transparent;
+}
+
+.prefooter {
+    background: url("../images/15.jpg") no-repeat center bottom;
+    background-size: cover;
+}
+
+.button {
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #e70b00;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 17px 0 15px;
+    font-size: 38px;
+    width: 586px;
+}
+
+.button:hover {
+    background: #be0900;
+}
+
+.button:active {
+    background: #be0900;
+    box-shadow: inset 0 5px 18px rgba(0, 0, 0, 0.5);
+}
+
+.autodrom .button {
+    margin: 55px auto 0;
+}
+
+.respondes .inner {
+    padding-top: 0;
+}
+
+.footer {
+    color: #ffffff;
+    background: #000;
+
+}
+
+.footer span {
+    display: block;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+
+.footer .container {
+    padding: 34px 0;
+    overflow: auto;
+}
+
+.soc {
+    margin-left: 110px;
+}
+
+.footer .phone {
+    font-size: 28px;
+    padding-bottom: 0;
+}
+
+.soc li {
+    float: left;
+}
+
+.soc li + li {
+    margin-left: 12px;
+}
+
+.soc a {
+    display: block;
+    background: url("../images/soc-sprite.jpg") no-repeat;
+    width: 36px;
+    height: 36px;
+}
+
+.soc .f {
+    background-position: 0 0;
+}
+
+.soc .v {
+    background-position: -36px 0;
+}
+
+.soc .t {
+    background-position: -72px 0;
+}
+
+.soc .i {
+    background-position: right 0;
+}
+
+.popup {
+    max-width: 765px;
+    font-size: 16px;
+    padding: 40px 45px;
+
+}
+
+.popup table {
+    width: 100%;
+}
+
+.popup table th {
+    padding: 15px 0;
+}
+
+.popup table td {
+    width: 40%;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+.popup table td {
+    padding: 15px 0;
+}
+
+.popup table tr td:first-child {
+    width: 20%;
+
+}
+
+.popup .name {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    margin: 0 0 40px -75px;
+    overflow: hidden;
+}
+
+.popup .name .before {
+    background: url("../images/popup-name-before.png");
+    width: 40px;
+    height: 53px;
+}
+
+.popup .name .after {
+    background: url("../images/popup-name-after.png") no-repeat;
+    width: 40px;
+    height: 53px;
+}
+
+.popup .name span {
+    display: block;
+    float: left;
+}
+
+.popup .name .mid {
+    background: #ff0400;
+    padding-top: 14px;
+    height: 39px;
+}
+
+.popup .day {
+    margin-bottom: 30px;
+}
+
+.fancybox-close {
+    background: url("../images/fancy-close.png") no-repeat;
+    width: 67px;
+    height: 65px;
+    top: -30px;
+    right: -30px;
+}
+
+.popup .button {
+    margin: 35px auto 20px;
+}
+
+.fancybox-inner {
+    overflow: visible !important;
+}
+
+.fancybox-skin {
+    border-radius: 4px;
+}
+
+.hide {
+    display: none;
+}
+
+.burger {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -11px;
+    display: none;
+
+}
+
+.burger div, .burger:before, .burger:after {
+    background: #ff0400;
+    height: 3px;
+    width: 100%;
+    content: '';
+    display: block;
+    cursor: pointer;
+}
+
+.burger div {
+    margin: 6px 0;
+}
+
+.comands .pagination {
+    display: none !important;
+}
+
+.popup table td span {
+    color: #999;
+    display: none;
+    margin-bottom: 10px;
+
+}
+
+.par1 {
+    position: absolute;
+    background: url("../images/par1.png") no-repeat center top;
+    left: 0;
+    height: 373px;
+    width: 100%;
+    top: 0;
+}
+
+.par2 {
+    position: absolute;
+    background: url("../images/comand-bg.png") no-repeat center bottom;
+    left: 65px;
+    height: 380px;
+    width: 786px;
+    top: 130px;
+    display: none;
+}
+
+.par3 {
+    position: absolute;
+    background: url("../images/par3.png") no-repeat center bottom;
+    left: 0;
+    height: 398px;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.autodrom .images img {
+    display: inline-block;
+}
+
+.autodrom .images {
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.autodrom .images img + img {
+    margin-left: 10px;
+
+}
+
+.top-menu img {
+    width: 90px !important;
+    height: auto !important;
+}
+
+.top-menu .container {
+    padding: 20px 0;
+}
+
+.top-menu li {
+    padding-top: 13px;
+}
+
+.road-filter__item span {
+    font-size: 12px;
+}
+
+.to-top {
+    display: block;
+    text-decoration: none;
+    background: url("../images/to-top-arr.png") no-repeat;
+    width: 67px;
+    height: 67px;
+}
+
+.to-top:hover {
+    opacity: 0.5;
+}
+
+.footer .made {
+    margin-left: 85px;
+}
+
+.flag-left {
+    background: url("../images/flag-left.png") no-repeat;
+    width: 602px;
+    height: 531px;
+    left: 0;
+    bottom: 415px;
+    position: absolute;
+    background-size: cover;
+}
+
+.programm h2 + p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.programm .block {
+    text-align: center;
+    width: 165px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.programm .block .name {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.programm .block + .block {
+    margin-left: 68px;
+}
+
+.programm .container {
+    text-align: center;
+}
+
+.programm .block p {
+    padding-top: 25px;
+    font-size: 13px;
+    line-height: 18px;
+    height: 116px;
+}
+
+.button.more {
+    font-size: 19px;
+    padding: 7px 0 6px;
+    width: 100%;
+}
+
+.tribunes {
+    background: url("../images/1.jpg") no-repeat center center;
+    height: 989px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tribunes li > div {
+    display: block;
+    max-width: 969px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.tribunes li .over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/tr-op-bg.png") no-repeat left top;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    display: none;
+}
+
+.tribunes li .over strong {
+    font-size: 25px;
+    margin-bottom: 20px;
+    display: block;
+    line-height: 30px;
+}
+
+.tribunes li .over .desc {
+    padding: 75px 180px;
+}
+
+.tribunes li .over p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px;
+
+}
+
+.tribunes li .over span {
+    display: block;
+    font-weight: 700;
+}
+
+.tribunes .close {
+    position: absolute;
+    background: url("../images/tr-close.png") no-repeat;
+    width: 48px;
+    height: 48px;
+    right: 70px;
+    top: 50px;
+    cursor: pointer;
+}
+
+.tribunes .close:hover {
+    opacity: 0.7;
+}
+
+.tribunes li img {
+    display: block;
+}
+
+.tribunes h2 {
+    color: #ffffff;
+    margin-bottom: 55px;
+}
+
+.tribunes .container {
+    padding-top: 55px;
+    position: relative;
+
+}
+
+.tribunes .button {
+    position: absolute !important;
+    left: 50%;
+    margin-left: -295px;
+    bottom: 60px;
+}
+
+.par-left, .par-right {
+    position: absolute;
+    background: url("../images/par-bg.png") no-repeat;
+    width: 468px;
+    height: 75px;
+    z-index: 100;
+}
+
+.par-left {
+    top: 145px;
+    left: -265px;
+}
+
+.par-right {
+    right: -210px;
+    bottom: -20px;
+}
+
+.tribunes li {
+    width: 100%;
+    float: left;
+}
+
+.tribunes .info {
+    font-size: 56px;
+    line-height: 66px;
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 40px;
+    padding-left: 200px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2d2d2d;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.tribunes .container:hover .info {
+    color: #cc3300;
+}
+
+.popup.prog {
+    width: auto;
+    max-width: 797px;
+}
+
+.prog p {
+    text-align: center;
+    padding: 0 0 10px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.prog img {
+    display: block;
+    margin-bottom: 45px;
+}
+
+.fancybox-nav span {
+    visibility: visible;
+    background: url("../images/fancy-arr.png") no-repeat;
+    width: 44px;
+    height: 44px;
+    opacity: 0.7;
+}
+
+.fancybox-nav:hover span {
+    opacity: 1;
+}
+
+.fancybox-next span {
+    right: 70px;
+    left: auto;
+    background-position: right 0;
+}
+
+.fancybox-prev span {
+    left: 70px;
+}
+
+.tick p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.header .counter + strong {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 23px;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+
+.counter {
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.counter .block {
+    display: inline-block;
+    color: #ffffff;
+
+}
+
+.counter .block + .block {
+    margin-left: 40px;
+}
+
+.counter strong {
+    display: block;
+    font-style: italic;
+    font-size: 58px;
+    line-height: 60px;
+    margin-bottom: 8px;
+}
+
+.counter span {
+    font-size: 17px;
+}
+
+.counter .block.last strong {
+    font-size: 40px;
+}
+
+.tribunes .img {
+    position: relative;
+}
+
+.tribunes .title {
+    text-align: left;
+    position: absolute;
+    padding-left: 150px;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer !important;
+
+}
+
+.tribunes .title span {
+    color: #e01d35;
+    border-bottom: 2px dashed #e01d35;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 66px;
+}
+
+.tribunes .title span:hover {
+    color: #252525;
+    border-color: #252525;
+}
+
+.scroll {
+    height: 350px;
+    position: relative;
+    padding-right: 30px;
+}
+
+.gallery {
+    background: url("../images/gallery-bg.jpg") no-repeat center center;
+    min-height: inherit;
+    background-size: cover;
+}
+
+.gallery .container {
+    position: relative;
+    overflow: visible;
+    max-width: 1058px;
+    padding: 70px 0;
+}
+
+.gallery li {
+    float: left;
+}
+
+.gallery img {
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.gallery .arr {
+    top: 50%;
+    margin-top: -34px;
+}
+
+.gallery h2 {
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.gallery .inner {
+    position: relative;
+}
+
+.prefooter {
+    color: #fff;
+
+}
+
+.prefooter .container {
+    padding: 70px 0;
+}
+
+.prefooter strong {
+    display: block;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.auto2 {
+    display: none;
+}
+
+.respondes .mail-form{
+    padding: 30px 0;
+}
+
+.respondes .pagination+strong{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 70px;
+    font-size: 23px;
+}
+
+.gallery .pagination{
+    display: none !important;
+}
+
+.tribunes .title span{
+    position: relative;
+}
+
+.tribunes .title span:after{
+    content: '';
+    position: absolute;
+    background: url("../images/finger.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    bottom: -40px;
+    margin-top: -20px;
+    right: 0;
+    background-size: cover;
+}
+
+
+/*responsive css horizontal*/
+
+@media (max-width: 1919px) {
+    .flag-right {
+        width: 316px;
+        height: 342px;
+    }
+
+    .flag-left {
+        width: 301px;
+        height: 265px;
+    }
+
+    .header h1 {
+        text-align: center;
+    }
+
+    .tribunes li img, .tribunes li > div, .tribunes li .over {
+        width: 660px !important;
+        height: 386px !important;
+
+    }
+
+    .tribunes .button {
+        position: relative !important;
+        left: auto;
+        bottom: auto;
+        margin: 0 auto 50px;
+    }
+
+    .tribunes {
+        height: auto;
+        padding-bottom: 90px;
+    }
+
+    .tribunes .info {
+        padding-left: 70px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .tribunes .arr {
+        top: 300px;
+    }
+
+    .tribunes .arr.prev {
+        background-position: 0 bottom !important;
+        left: 15px;
+    }
+
+    .tribunes .arr.next {
+        background-position: right bottom !important;
+        right: 15px;
+    }
+
+    .tribunes .inner {
+        margin-bottom: 50px;
+    }
+
+    .tribunes .title {
+        padding-left: 110px;
+        top: 50px;
+    }
+
+    .tribunes .title span {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .tribunes li .over .desc {
+        padding: 50px 100px;
+    }
+
+    .tribunes li .over .desc strong {
+        font-size: 18px;
+    }
+
+    .tribunes li .over .desc p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .scroll {
+        height: 220px;
+        padding-right: 20px;
+    }
+
+    .tribunes .close {
+        right: 30px;
+        top: 15px;
+    }
+
+}
+
+@media (max-width: 1540px) {
+    .flag-right {
+        width: 158px;
+        height: 171px;
+    }
+
+    .flag-left {
+        display: none;
+    }
+}
+
+@media (max-width: 1366px) and (min-width: 1366px) {
+    .header, .prefooter {
+        min-height: inherit;
+        height: 600px;
+    }
+
+    .prefooter .container{
+        padding-top: 185px;
+    }
+
+    .header h1 {
+        padding-top: 370px;
+        margin-bottom: 15px;
+    }
+
+    .top-menu li {
+        padding-top: 17px;
+    }
+
+    #container {
+        padding-top: 88px;
+    }
+
+    .shedule li {
+        margin-bottom: 20px;
+    }
+
+    .shedule h2 {
+        margin-bottom: 15px;
+
+    }
+
+    .shedule p {
+        padding-top: 10px;
+    }
+
+    .tickets p {
+        margin-bottom: 30px;
+    }
+
+    .shedule {
+        min-height: inherit;
+        height: 450px;
+        background: #ee3030;
+
+    }
+
+    .header h1 {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1366px) {
+    .flag-right {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1279px) {
+    .tribunes .par-left, .tribunes .par-right {
+        display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    .gallery img {
+        width: 900px !important;
+        height: 600px !important;
+        margin: 0 auto;
+    }
+
+
+
+    .gallery h2 {
+        margin-bottom: 40px;
+    }
+
+    .gallery .container {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    #autodrom {
+        display: none;
+    }
+
+    .auto, .autodrom {
+        display: none !important;
+    }
+
+}
+
+@media (max-height: 820px) {
+    .gallery img {
+        height: 450px !important;
+        width: 676px !important;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .to-top {
+        display: none;
+    }
+
+    .footer .made {
+        margin-left: 0;
+        float: right;
+
+    }
+
+    .prog img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .shedule a:before, .shedule a:after {
+        display: none;
+    }
+
+    .shedule a {
+        border: 3px solid #fff;
+        padding: 0;
+        height: auto;
+    }
+
+    .shedule a span {
+        float: none;
+        text-align: center;
+    }
+
+    .shedule a .date:after {
+        display: none;
+    }
+
+    .shedule a .name {
+        width: auto;
+        float: none;
+        height: auto;
+        padding: 10px;
+    }
+
+    .shedule li {
+        margin-bottom: 30px;
+    }
+
+    .shedule p {
+        padding-top: 0;
+        padding-bottom: 40px;
+
+    }
+
+    .tribunes li > div, .tribunes li .over, .tribunes li img {
+        width: 400px !important;
+        height: 234px !important;
+    }
+
+    .tribunes img {
+        width: 400px !important;
+        height: 234px !important;
+
+    }
+
+    .tribunes li .info {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .tribunes {
+        height: auto;
+    }
+
+    .tribunes .arr {
+        top: 210px;
+    }
+
+    .arr.prev {
+        background-position: 0 bottom !important;
+    }
+
+    .arr.next {
+        background-position: right bottom !important;
+    }
+
+    .tribunes .inner {
+        margin-bottom: 50px;
+    }
+
+    .tribunes .button {
+        position: relative !important;
+        left: auto;
+        bottom: auto;
+        margin: 0 auto 50px;
+    }
+
+    .tickets .block br {
+        display: none;
+    }
+
+    .gallery img {
+        width: 700px !important;
+        height: 467px !important;
+    }
+
+    .scroll{
+        height: 120px;
+    }
+
+
+    .tribunes li .over .desc{
+        padding: 30px 60px;
+    }
+
+    .tribunes .title{
+        padding-left: 65px;
+        top: 25px;
+    }
+
+}
+
+@media (max-width: 929px) {
+    .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .top-menu .container {
+        position: relative;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .material-menu-wrapper {
+        padding: 20px;
+        background: #fff;
+        z-index: 10000 !important;
+    }
+
+    .material-menu-view-mobile {
+        background-color: #fff;
+        -webkit-box-shadow: 40px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 40px 0px 30px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 40px 0px 30px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .material-menu-titlebar {
+        -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .top-menu li {
+        float: none;
+        padding-top: 15px;
+    }
+
+    .top-menu ul a:before, .top-menu ul a:after {
+        display: none;
+    }
+
+    .top-menu li + li {
+        margin-left: 0;
+    }
+
+    .top-menu ul {
+        float: none;
+        position: relative;
+        z-index: 10000;
+    }
+
+    .top-menu ul a {
+        text-align: center;
+        height: auto;
+        padding: 5px 0;
+    }
+
+    .material-menu-overlay {
+        z-index: 2000 !important;
+    }
+
+    .top-menu {
+        z-index: 3000;
+    }
+
+    .soc {
+        margin-left: 100px;
+    }
+
+    .tickets .block {
+        width: 45%;
+        margin: 0 1% 2%;
+    }
+
+    .tickets .block + .block {
+        margin: 0 1% 2%;
+    }
+
+    .tickets .block.one {
+        background: #e01d35;
+    }
+
+    .tickets .block.two {
+        background: #2159a9;
+    }
+
+    .tickets .block.three {
+        background: #b9bfc3;
+    }
+
+    .tickets .block.four {
+        background: #000;
+    }
+
+    .tickets h3 {
+        padding-left: 0;
+    }
+
+    .tickets .block span {
+        padding-right: 0;
+    }
+
+    .popup .name {
+        margin-left: 0;
+    }
+
+    .fancybox-close {
+        top: 20px;
+        right: 20px;
+    }
+
+    .popup {
+        padding: 30px;
+    }
+
+    .popup, .popup.prog {
+        max-width: 650px;
+    }
+
+    .tickets h3 {
+        height: 55px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .tickets .block {
+        height: 100px;
+    }
+
+    .tickets .block span {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .programm .block, .programm .block + .block {
+        width: 40%;
+        margin: 0 2% 50px;
+
+    }
+
+    .programm .block p {
+        height: auto;
+        min-height: 65px;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .mail-form input {
+        width: 145px;
+    }
+
+    .mail-form .button {
+        width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .programm h2 + p {
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .comands li img, .comands li .img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        padding-bottom: 30px;
+        display: block;
+        max-width: 450px;
+        margin: 0 auto;
+
+    }
+
+    .comands li {
+        display: block;
+        /*height: auto;*/
+        height: 200px;
+        min-height: inherit;
+    }
+
+    .comands li h2 {
+        display: none;
+    }
+
+    .comands .arr {
+        display: none !important;
+    }
+
+    .comands .pagination {
+        display: block !important;
+        padding-bottom: 40px;
+    }
+
+    .comands .inner {
+        padding-bottom: 40px;
+        height: auto;
+        min-height: inherit;
+        background: none;
+    }
+
+    .footer img, .footer .soc {
+        float: none;
+        display: block;
+        margin: 0 auto 25px;
+        text-align: center;
+    }
+
+    .soc li {
+        float: none;
+        display: inline-block;
+
+    }
+
+    .footer .made {
+        float: none;
+        text-align: center;
+
+    }
+
+    .respondes .img {
+        float: none;
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .respondes .inf {
+        margin-left: 0;
+        background: none;
+        padding-right: 0;
+    }
+
+    .respondes .inf .top {
+        text-align: center;
+    }
+
+    .respondes .inf p {
+        text-align: center;
+    }
+
+    .comands li h2 {
+        margin-bottom: 0;
+    }
+
+    .popup, .popup.prog {
+        max-width: 560px;
+    }
+
+    .popup .button {
+        width: 100%;
+    }
+
+    .par1, .par2, .par3 {
+        display: none;
+    }
+
+    .respondes li {
+        min-height: inherit;
+        padding-bottom: 30px;
+    }
+
+    .counter .block.last strong {
+        font-size: 28px;
+    }
+
+    .counter .block strong {
+        font-size: 35px;
+    }
+
+    .counter span {
+        font-size: 15px;
+    }
+
+    .counter {
+        padding-bottom: 20px;
+    }
+
+    .header .counter + strong {
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        padding-top: 20px;
+    }
+
+    .mail-form .button {
+        width: 230px;
+    }
+
+    .mail-form input {
+        margin-right: 10px;
+        width: 145px;
+    }
+
+    .gallery img {
+        width: 600px !important;
+        height: 400px !important;
+    }
+
+    .gallery {
+        padding: 35px 0;
+    }
+
+
+
+}
+
+@media (max-width: 680px) {
+    .popup, .popup.prog {
+        max-width: 540px;
+    }
+
+    .top-menu img {
+        width: 90px !important;
+        height: auto !important;
+    }
+
+    #container {
+        padding-top: 88px;
+    }
+
+    .top-menu .container {
+        padding-top: 20px;
+    }
+
+}
+
+@media (max-width: 639px) {
+    .button {
+        width: auto;
+        font-size: 22px;
+    }
+
+    .header .container {
+        padding-bottom: 50px;
+    }
+
+    .popup table td span {
+        display: block;
+    }
+
+    .popup table th {
+        display: none;
+    }
+
+    .popup table td {
+        display: block;
+        width: 100% !important;
+    }
+
+    .popup .name .before, .popup .name .after {
+        display: none;
+    }
+
+    .popup .name {
+        margin-left: -10px;
+    }
+
+    .popup .name .mid {
+        padding: 5px 10px !important;
+        height: auto;
+        font-size: 18px;
+    }
+
+    .popup table td:last-child {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .fancybox-close {
+        right: 10px;
+        top: 10px;
+    }
+
+    .respondes .img {
+        float: none;
+        margin: 0 auto;
+        width: 75px;
+    }
+
+    .respondes .img img {
+        width: 75px;
+        height: auto;
+    }
+
+    .respondes li strong {
+        font-size: 15px;
+    }
+
+    .respondes .inf span {
+        font-size: 13px;
+    }
+
+    .respondes .inf p {
+        font-size: 13px;
+        line-height: 18px;
+        padding-left: 0;
+    }
+
+    .hide-m {
+        display: none;
+    }
+
+    .respondes li .top {
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+    }
+
+    .respondes li {
+        padding-bottom: 60px;
+        min-height: inherit;
+    }
+
+    .tickets p, .programm h2 + p {
+        font-size: 13px;
+        line-height: 18px;
+        padding-bottom: 15px;
+        margin-bottom: 0;
+    }
+
+    .tickets h2 {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .wrap {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .shedule h2 {
+        margin-bottom: 0 !important;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .shedule li {
+        margin-bottom: 10px;
+    }
+
+    .shedule a .date {
+        font-size: 13px;
+        background: #fff;
+        color: #e20000;
+        height: auto;
+        padding-top: 8px;
+        padding-bottom: 9px;
+        padding-right: 8px;
+    }
+
+    .shedule a .name {
+        padding: 5px;
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .shedule {
+        min-height: 0;
+    }
+
+    .shedule p {
+        font-size: 14px;
+        margin-bottom: 0;
+        line-height: 18px;
+        padding-bottom: 0;
+    }
+
+    .tribunes .arr {
+        display: none !important;
+    }
+
+    .programm .block, .programm .block + .block {
+        width: 100%;
+        margin: 0 auto 40px;
+    }
+
+    .programm .block p {
+        height: auto;
+        min-height: inherit;
+        margin-bottom: 20px;
+    }
+
+    .tribunes .button {
+        margin: 0 10px 40px;
+    }
+
+    .gallery img {
+        width: 450px !important;
+        height: 300px !important;
+    }
+
+    .gallery .inner {
+        height: 300px !important;
+    }
+
+    .counter .block strong {
+        font-size: 25px;
+        margin-bottom: 0;
+
+    }
+
+    .counter .block span {
+        padding-top: 10px;
+    }
+
+    .counter .block.last strong {
+        font-size: 20px;
+
+    }
+
+    .counter .block + .block {
+        margin-left: 20px;
+    }
+
+    .header .counter + strong {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .mail-form .button {
+        width: 200px;
+    }
+
+    .mail-form .button {
+        font-size: 18px;
+    }
+
+    .prefooter strong {
+        font-size: 20px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .counter {
+        padding-bottom: 10px;
+    }
+
+    .gallery .pagination{
+        display: block !important;
+        padding-top: 10px;
+    }
+
+    .gallery .pagination a+a{
+        margin-left: 3px;
+    }
+
+    .tribunes li .over .desc p {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+}
+
+@media (max-width: 617px) {
+    .mail-form input {
+        margin-right: 0;
+    }
+
+    .mail-form input + input {
+        margin-left: 10px;
+    }
+
+    .mail-form .button {
+        margin: 15px auto 0;
+        display: block;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .popup, .popup.prog {
+        max-width: 280px;
+        padding: 10px;
+        overflow: auto;
+    }
+
+    .popup .day {
+        margin-bottom: 5px;
+    }
+
+    .popup table td {
+        padding: 6px 0;
+    }
+}
+
+@media (max-width: 479px) {
+
+    .tickets .block, .tickets .block + .block {
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+
+    .tickets p {
+        display: none;
+    }
+
+    h2 {
+        font-size: 39px;
+        line-height: 45px;
+    }
+
+    .tickets br {
+        display: none;
+    }
+
+    .tickets h3 {
+        height: auto;
+    }
+
+    .tickets .block {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .tribunes li img {
+        width: 290px !important;
+        height: 170px !important;
+    }
+
+    .tribunes li > div, .tribunes li .over, .tribunes li img {
+        width: 290px !important;
+        height: 170px !important;
+        border: 0 !important;
+    }
+
+    .tribunes li .info {
+        font-size: 24px;
+        line-height: 30px;
+        border: 0 !important;
+        padding-left: 40px;
+    }
+
+    .tribunes li {
+        overflow: hidden;
+    }
+
+    .header h1 {
+        font-size: 25px;
+        line-height: 35px;
+
+    }
+
+    .counter .block strong {
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+    .counter .block span {
+        font-size: 12px;
+    }
+
+    .counter .block + .block {
+        margin-left: 10px;
+    }
+
+    .counter .block.last {
+        display: none;
+    }
+
+    .header .counter + strong {
+        font-size: 13px;
+        line-height: 21px;
+        margin-bottom: 10px;
+    }
+
+    .mail-form input {
+        font-size: 16px;
+        padding: 0 15px;
+        width: 112px;
+    }
+
+    .tribunes .title {
+        top: 10px;
+        padding-left: 35px;
+
+    }
+
+    .tribunes li .over .desc {
+        padding: 15px 40px;
+    }
+
+    .scroll {
+        height: 80px;
+        padding-right: 5px;
+    }
+
+    .tribunes .title span {
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    .tribunes li .over .desc strong {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
+
+    }
+
+    .prefooter strong {
+        font-size: 13px;
+
+    }
+
+    .gallery img {
+        width: 290px !important;
+        height: 193px !important;
+
+    }
+
+    .gallery .inner {
+        height: 193px !important;
+    }
+
+    .gallery .arr{
+        background-image: url("../images/slider-arr2.png");
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    .gallery .arr.prev {
+        left: 20px;
+    }
+
+    .gallery .arr.next {
+        right: 20px;
+    }
+
+    .tribunes .title span:after{
+        width: 20px;
+        height: 20px;
+        bottom: -20px;
+    }
+}
+
+/*responsive css horizontal*/
+
+/*responsive css vertical*/
+
+@media (max-height: 1024px) {
+    .header, .prefooter {
+        height: 935px;
+    }
+
+    .header h1 {
+        padding-top: 130px;
+    }
+
+    .prefooter .container{
+        padding-top: 300px;
+    }
+
+    .gallery{
+        height: 1000px;
+    }
+
+    .gallery .container{
+        padding-top: 180px;
+    }
+}
+
+@media (max-height: 1000px) {
+    .header, .prefooter {
+        height: 923px;
+
+    }
+
+    .header h1 {
+        padding-top: 130px;
+    }
+
+    .gallery{
+        height: 940px;
+    }
+
+
+}
+
+@media (max-height: 960px) {
+    .header, .prefooter  {
+        height: 893px;
+
+    }
+
+    .header h1 {
+        padding-top: 130px;
+    }
+
+    .gallery{
+        height: 890px;
+    }
+
+    .gallery .container{
+        padding-top: 70px;
+    }
+}
+
+@media (max-height: 820px) {
+    .header, .prefooter {
+        height: 735px;
+        min-height: inherit;
+    }
+
+    .header h1 {
+        padding-top: 60px;
+    }
+
+    .header .scrollarr {
+        bottom: 70px;
+    }
+
+    .gallery{
+        height: 750px;
+    }
+
+    .gallery .container{
+        padding-top: 80px;
+    }
+
+}
+
+@media (max-height: 736px) {
+    .header, .prefooter {
+        height: 648px;
+
+    }
+
+    .tickets p, .programm h2 + p {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 25px;
+    }
+
+    .tickets h2 {
+        margin-bottom: 30px;
+    }
+
+    .prefooter .container{
+        padding-top: 210px;
+    }
+
+    .gallery{
+        height: 640px;
+    }
+
+    .gallery .container{
+        padding-top: 180px;
+    }
+
+}
+
+@media (max-height: 688px) {
+
+    .header, .prefooter {
+        height: 600px;
+
+    }
+
+    .header h1 {
+        padding-top: 30px;
+    }
+
+    .autodrom h2 {
+        margin-bottom: 0;
+    }
+
+    .header .scrollarr {
+        bottom: 20px;
+    }
+
+
+
+    .gallery .container{
+        padding-top: 40px;
+    }
+
+}
+
+@media (max-height: 640px) {
+    .header, .prefooter{
+        height: 553px;
+    }
+
+    .prefooter .container{
+        padding-top: 220px;
+    }
+
+    .gallery{
+        height: 540px;
+    }
+
+    .gallery .container{
+        padding-top: 130px;
+    }
+
+}
+
+@media (max-height: 627px) and (max-width: 375px) {
+    .header, .prefooter {
+        height: 540px;
+    }
+
+    .prefooter .container{
+        padding-top: 170px;
+    }
+
+
+    .gallery .container{
+        padding-top: 130px;
+    }
+
+}
+
+@media (max-height: 568px) {
+    .header, .prefooter {
+        height: 481px;
+    }
+
+    .wrap {
+        padding: 30px 0;
+    }
+
+    h2 {
+        margin-bottom: 15px !important;
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .comands .container {
+        padding-top: 40px;
+    }
+
+    .comands .inner {
+        margin-top: 40px;
+    }
+
+    .prefooter .container{
+        padding-top: 200px;
+    }
+
+    .prefooter .container{
+        padding-top: 150px;
+    }
+
+    .gallery{
+        height: 470px;
+    }
+
+    .gallery .container{
+        padding-top: 100px;
+    }
+}
+
+@media (max-height: 480px) {
+
+    .header .scrollarr {
+        bottom: 15px;
+    }
+
+    .prefooter .container{
+        padding-top: 100px;
+    }
+
+    .gallery{
+        height: 370px;
+    }
+
+    .gallery .container{
+        padding-top: 50px;
+    }
+}
+
+/*responsive css vertical*/
